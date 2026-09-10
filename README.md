@@ -12,7 +12,7 @@ Rather than naively asserting that programming skills will never be rendered obs
 
 ### II. From Vague Description to Granular Control
 
-In AI-assisted video production, entering a prompt such as "generate a high-end product advertisement" rarely yields an output that meets professional requirements. Models frequently distort product geometry, generate erroneous packaging text, or produce erratic character movements and incoherent camera logic. Consequently, designers must translate qualitative aesthetic goals into discrete, actionable conditions, including product color fidelity, shot sequencing, character kinematics, voiceover scripts, and brand compliance constraints.
+Recent studies show that video-language models may produce visually plausible but factually inconsistent outputs, including temporal distortions and fabricated content [^3]. In AI-assisted video production, entering a prompt such as "generate a high-end product advertisement" rarely yields an output that meets professional requirements. Models frequently distort product geometry, generate erroneous packaging text, or produce erratic character movements and incoherent camera logic. Consequently, designers must translate qualitative aesthetic goals into discrete, actionable conditions, including product color fidelity, shot sequencing, character kinematics, voiceover scripts, and brand compliance constraints.
 
 This translation process mirrors the problem decomposition and logical structuring inherent to programming. While prompt engineering itself is not strictly equivalent to coding, crafting effective prompts demands the ability to convert ambiguous human intentions into explicit rules and systemic constraints.
 
@@ -20,7 +20,7 @@ This translation process mirrors the problem decomposition and logical structuri
 
 ### III. The "Gacha" Mechanism and Model Hallucinations
 
-AI video generation possesses inherent stochasticity; identical prompts can yield drastically different results across runs. Visual artifacts frequently arise—such as deformed hands, compromised product structural integrity, and broken temporal continuity between shots. Voiceovers are similarly prone to phonetic garbling, incomplete semantics, or outright "gibberish" (phonemic hallucinations). More insidiously, flawed outputs often mask their errors behind realistic visual styling, appearing plausible while embedding deceptive or inaccurate information.
+AI video generation possesses inherent stochasticity; Generative AI systems do not directly execute user intentions; instead, they sample outputs from learned probability distributions, resulting in variations even under identical conditions [^1]. Visual artifacts frequently arise—such as deformed hands, compromised product structural integrity, and broken temporal continuity between shots. Voiceovers are similarly prone to phonetic garbling, incomplete semantics, or outright "gibberish" (phonemic hallucinations). More insidiously, flawed outputs often mask their errors behind realistic visual styling, appearing plausible while embedding deceptive or inaccurate information. Prompting provides a mechanism to guide model behavior, but it does not guarantee deterministic or controllable outputs [^2].
 
 As a result, designers can no longer merely serve as content generators; they must establish rigorous verification workflows to audit the alignment among product metadata, subtitles, voiceovers, and visual frames.
 
@@ -35,3 +35,15 @@ Programming empowers designers to modularize the AI-driven creative workflow int
 ### V. Conclusion
 
 While AI will undoubtedly automate repetitive tasks within both programming and design, it cannot autonomously define problem scope, exercise aesthetic judgment, or shoulder responsibility for the final outcome. For designers, learning to program is not about competing with AI in execution speed; rather, it is about retaining the agency to govern, intervene in, and remediate systems when models hallucinate, objectives blur, or outputs prove unreliable.
+[/] Markdown
+
+# References
+
+[^1]: Holtzman, A., et al. (2020).  
+  [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751).
+
+[^2]: Liu, P., et al. (2023).  
+  [Pre-train, Prompt, and Predict](https://doi.org/10.1145/3560815).
+
+[^3]: Huang, Y., et al. (2026).  
+  Distorted or Fabricated? A Survey on Hallucination in Video LLMs.
